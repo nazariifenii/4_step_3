@@ -1,0 +1,46 @@
+$light-grey: #ebeef0;
+$white: #fff;
+$light-blue: #44a3db;
+$margin-main-content-left: 40px;
+
+body {
+  background-color: $light-grey;
+  margin-bottom: 45px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: normal;
+}
+
+.backround-white {
+  background-color: $white;
+}
+
+.toggleBar {
+  height: 30px;
+  background-color: #f8f8f8;
+}
+
+.place-tab {
+  background-color: #c9ffdb;
+}
+
+.event-timetable-speech:hover {
+  background-color: #effeff !important;
+  .event-timetable-time {
+    background-color: #effeff !important;
+  }
+}
+
+.event-timetable-time {
+  background-color: #f9f9f9;
+}
+
+.speaker-photo {
+  height: 40px;
+  width: 40px;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Покупка квитків, попутники, заходи, організація подій на 2EVENT - безкоштовна мобільна соціальна мережа.</title>
+	<!-- Latest compiled JavaScript -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled and minified CSS -->
+</head>
+
+<body>
+	<!-- <header class="main_header new scroll">
+		<div class="search-header">
+			<div class="container">
+				<form action="/uk/events">
+					<input type="text" name="search" class="search-item-text ui-autocomplete-input" data-search="/uk/events/autocomplete" value=""
+					    placeholder="Введіть назву заходу" autocomplete="off" spellcheck="false">
+					<input type="submit" class="sbm" value="Пошук">
+				</form>
+			</div>
+		</div>
+		<div class="top-header">
+			<div class="container new">
+				<div class="col language-choose">
+					<div class="language_switcher">
+						<a class="current" data-lang="uk">
+							<img src="/images/flags/uk.png" alt="Українська">
+						</a>
+						<div class="other">
+							<a href="/ru/" data-lang="ru">
+								<img src="/images/flags/ru.png" alt="Русский">
+							</a>
+							<a href="/en/" data-lang="en">
+								<img src="/images/flags/en.png" alt="English">
+							</a>
+							<a href="/pl/" data-lang="pl">
+								<img src="/images/flags/pl.png" alt="Polski">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="login col">
+
+					<div class="loginBtn">
+						<a class="logB log2">Вхід</a>
+					</div>
+					<div class="language_switcher">
+						<a class="current" data-lang="uk">
+							<img src="/images/flags/uk.png" alt="Українська">
+						</a>
+						<div class="other">
+							<a href="/ru/" data-lang="ru">
+								<img src="/images/flags/ru.png" alt="Русский">
+							</a>
+							<a href="/en/" data-lang="en">
+								<img src="/images/flags/en.png" alt="English">
+							</a>
+							<a href="/pl/" data-lang="pl">
+								<img src="/images/flags/pl.png" alt="Polski">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="search">
+					<a href="#" class="open-search" title="Пошук"></a>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="city">
+					<input type="hidden" id="auto-city" class="auto-city" value="" data-url="/uk/profiles/updateCity">
+					<div class="pop">
+						<p>Your city
+							<b></b>?</p>
+						<div class="action">
+							<a href="#" class="btn yes">Yes</a>
+							<a href="#" class="choose">Choose another</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container second-header new">
+			<div class="row">
+				<div class="logo_wrapper col-xs-4 col-md-2">
+					<a href="/uk/" class="logo">
+						<img src="https://2event.com/img/common/logo.png" alt="logo image_src" class="img-responsive">
+					</a>
+				</div>
+				<div class="col-xs-8 col-md-3 pull-right">
+					<div class="create-btn ">
+						<button type="button" class="pull-xs-right navbar-toggle collapsed" data-toggle="collapse" data-target=".top_menu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="btn btn-create-event logB log2">Створити подію</a>
+					</div>
+				</div>
+				<div class="menu-center col-xs-12 col-md-7">
+
+					<nav class="top_menu navbar-collapse collapse" role="navigation" aria-expanded="true">
+						<div class="navigations_controls ">
+							<ul class="navigation" id="yw1">
+								<li>
+									<a href="/uk/Buy_app_for_event">Додаток для подій
+										<div class="elipsys"></div>
+									</a>
+								</li>
+								<li>
+									<a href="/uk/events">Афіша
+										<span>(1 480 981)</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="apBox visible-sm visible-xs">
+			<div class="container">
+				<ul class="">
+					<li class="logo2event">
+						<a href="/uk/" class="logo">
+							<img src="https://2event.com/img/common/logo.png" alt="logo image_src" class="img-responsive">
+						</a>
+					</li>
+					<li class="apStor">
+						<a href="/uk/itunes"></a>
+					</li>
+					<li class="googPl">
+						<a href="/uk/gplay"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header> -->
+
+	<div class="container backround-white mb-5">
+		<div class="row">
+			<h4 class="col-12 py-4 text-uppercase text-center">Новое мероприятие</h4>
+		</div>
+		<div class="border">
+			<div style="height: 53px; background-color: #1ebb6c;"></div>
+			<div class="row-fluid my-4">
+				<div class="col-9 mx-auto p-0">
+					<div class="toggleBar d-flex align-items-center px-2 border-bottom">
+						<h6 class="text-uppercase m-0 mr-auto">Расписание мероприятия</h6>
+						<svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round"
+						 stroke-linejoin="round" stroke-width="2">
+							<path d="M30 12 L16 24 2 12" />
+						</svg>
+					</div>
+					<div class="tabs mt-3">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">29
+									Мар 2016</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">30
+									Мар 2016</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">31
+									Мар 2016</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="row-fluid border-bottom mt-3 d-flex flex-row">
+									<div class="place-tab border-bottom-0 px-2 py-1 d-flex col-3 justify-content-between">
+										<div class="d-flex flex-column">
+											<p class="m-0 text-uppercase">Место проведения</p>
+											<p class="m-0 text-secondary small">(название / адрес / зал)</p>
+										</div>
+										<svg class="my-1" id="i-edit" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round"
+										 stroke-linejoin="round" stroke-width="2">
+											<path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+										</svg>
+									</div>
+									<div class="col-3 d-flex align-items-center">
+										<svg class="text-primary" id="i-location" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round"
+										 stroke-linejoin="round" stroke-width="2">
+											<circle cx="16" cy="11" r="4" />
+											<path d="M24 15 C21 22 16 30 16 30 16 30 11 22 8 15 5 8 10 2 16 2 22 2 27 8 24 15 Z" />
+										</svg>
+										<p class="m-0 text-primary">Добавить место/зал</p>
+									</div>
+								</div>
+								<div class="event-timetable py-3">
+									<div class="container-fluid border">
+										<div class="row border event-timetable-speech">
+											<div class="col-2 event-timetable-time border-right pt-1">09:30 - 10:00</div>
+											<div class="col-10 py-1 d-flex flex-row justify-content-between">
+												<div>
+													<p class="text-uppercase mb-1">“My Second Name of Speech with too many words”</p>
+													<div class="event-timetable-speeker d-flex">
+														<img src="./img/face.PNG" class="speaker-photo mr-1" alt="">
+														<div>
+															<p class="m-0">Анна Романова</p>
+															<p class="m-0"><small>менеджер, Epam</small></p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex flex-column py-1">
+													<svg class="mb-1" id="i-trash" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M28 6 L6 6 8 30 24 30 26 6 4 6 M16 12 L16 24 M21 12 L20 24 M11 12 L12 24 M12 6 L13 2 19 2 20 6" />
+													</svg>
+													<svg class="my-1" id="i-edit" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="row border event-timetable-speech">
+											<div class="col-2 event-timetable-time border-right pt-1">10:00 - 10:40</div>
+											<div class="col-10 py-1 d-flex flex-row justify-content-between">
+												<div>
+													<p class="text-uppercase mb-1">“My Second Name of Speech with too many words”</p>
+													<div class="event-timetable-speeker d-flex">
+														<img src="./img/face.PNG" class="speaker-photo  mr-1" alt="">
+														<div>
+															<p class="m-0">Анна Романова</p>
+															<p class="m-0"><small>менеджер, Epam</small></p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex flex-column py-1">
+													<svg class="mb-1" id="i-trash" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M28 6 L6 6 8 30 24 30 26 6 4 6 M16 12 L16 24 M21 12 L20 24 M11 12 L12 24 M12 6 L13 2 19 2 20 6" />
+													</svg>
+													<svg class="my-1" id="i-edit" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="row border event-timetable-speech">
+											<div class="col-2 event-timetable-time border-right py-1">10:40 - 11:20</div>
+											<div class="col-10 py-1 d-flex flex-row justify-content-between">
+												<p class="text-uppercase">“My Name of Speech with too many words”</p>
+												<div class="d-flex flex-column py-1">
+													<svg class="mb-1" id="i-trash" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M28 6 L6 6 8 30 24 30 26 6 4 6 M16 12 L16 24 M21 12 L20 24 M11 12 L12 24 M12 6 L13 2 19 2 20 6" />
+													</svg>
+													<svg class="my-1" id="i-edit" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round"
+													 stroke-linejoin="round" stroke-width="2">
+														<path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container-fluid">
+									<div class="row align-items-center d-flex">
+										<div class="input-group col-2 p-0">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">
+													<svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+													 stroke-width="2">
+														<circle cx="16" cy="16" r="14" />
+														<path d="M16 8 L16 16 20 20" />
+													</svg>
+												</span>
+											</div>
+											<input type="text" class="form-control px-1 text-center" placeholder="ГГ:ММ" aria-describedby="basic-addon1">
+										</div>
+										<span class="mx-2 d-flex align-items-center">-</span>
+										<input class="form-control col-1 px-1 text-center" type="text" placeholder="ГГ:ММ">
+										<input class="form-control col-8 ml-2" type="text" placeholder="Название / тема выступления">
+										<svg class="text-danger ml-1" id="i-close" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round"
+										 stroke-linejoin="round" stroke-width="2">
+											<path d="M2 30 L30 2 M30 30 L2 2" />
+										</svg>
+									</div>
+									<div class="row">
+										<div class="d-flex align-items-center text-primary col-2 pl-1">
+											<svg id="i-user" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+											 stroke-width="2">
+												<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z"
+												/>
+											</svg>
+											<p class="m-0 mx-1 border-bottom"><small>Спикер</small></p>
+											<svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round"
+											 stroke-linejoin="round" stroke-width="2">
+												<path d="M30 12 L16 24 2 12" />
+											</svg>
+										</div>
+										<div class="col-8 d-flex align-items-center text-primary ">
+											<p class="m-0"><small>Регистрация</small></p>
+											<span class="mx-2 text-muted">|</span>
+											<p class="m-0"><small>Кофе брэйк</small></p>
+											<span class="mx-2 text-muted">|</span>
+											<p class="m-0"><small>Обед</small></p>
+											<span class="mx-2 text-muted">|</span>
+											<p class="m-0"><small>Афтепати</small></p>
+										</div>
+									</div>
+									<div class="row">
+										<button type="button" class="btn btn-outline-primary col-4 mt-4 d-flex align-items-center justify-content-between">
+											<svg id="i-plus" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+											 stroke-width="2">
+												<path d="M16 2 L16 30 M2 16 L30 16" />
+											</svg>
+											Добавить елемент расписания</button>
+									</div>
+									<div class="row">
+										<p class="col-4 text-center text-muted"><small>(выступление, доклад, перерыв и т.д)</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Add your information here</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/bootstrap-colorpicker.js"></script>
+</body>
+
+</html>
