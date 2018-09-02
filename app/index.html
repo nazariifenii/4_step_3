@@ -149,7 +149,12 @@
 			<h4 class="col-12 py-4 text-uppercase text-center">Новое мероприятие</h4>
 		</div>
 		<div class="border">
-			<div style="height: 53px; background-color: #1ebb6c;"></div>
+			<div id="flowBoxes" class="row mx-0" style="height: 53px; background-color: #1ebb6c;">
+		        <div class="col right text-uppercase d-flex align-items-center justify-content-center">1. компания-организатор</div>
+			    <div class="col right text-uppercase d-flex align-items-center justify-content-center"">2. детали мероприятия</div>
+			    <div class="col right text-uppercase d-flex align-items-center justify-content-center"">3. билети/регистрация</div>
+			    <div class="col active text-uppercase d-flex align-items-center justify-content-center"">4. настройки</div>
+			</div>
 			<div class="row-fluid my-4">
 				<div class="col-9 mx-auto p-0">
 					<div class="toggleBar d-flex align-items-center px-2 border-bottom">
@@ -176,8 +181,8 @@
 						</ul>
 						<div class="tab-content" id="myTabContent">
 							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-								<div class="row-fluid border-bottom mt-3 d-flex flex-row">
-									<div class="place-tab border-bottom-0 px-2 py-1 d-flex col-3 justify-content-between">
+								<div class="row row-eq-height border-bottom mt-3 w-100 mx-auto">
+									<div class="place-tab border-bottom-0 px-2 py-1 d-flex col-xl-3 col-lg-4 col-md-6 col-12 justify-content-between height-40">
 										<div class="d-flex flex-column">
 											<p class="m-0 text-uppercase">Место проведения</p>
 											<p class="m-0 text-secondary small">(название / адрес / зал)</p>
@@ -187,7 +192,7 @@
 											<path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 										</svg>
 									</div>
-									<div class="col-3 d-flex align-items-center">
+									<div class="col-xl-3 col-lg-4 col-md-6 col-12 d-flex align-items-center height-40">
 										<svg class="text-primary" id="i-location" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round"
 										 stroke-linejoin="round" stroke-width="2">
 											<circle cx="16" cy="11" r="4" />
@@ -199,7 +204,7 @@
 								<div class="event-timetable py-3">
 									<div class="container-fluid border">
 										<div class="row border event-timetable-speech">
-											<div class="col-2 event-timetable-time border-right pt-1">09:30 - 10:00</div>
+											<div class="col-2 event-timetable-time border-right pt-1 p-0 text-center">09:30 - 10:00</div>
 											<div class="col-10 py-1 d-flex flex-row justify-content-between">
 												<div>
 													<p class="text-uppercase mb-1">“My Second Name of Speech with too many words”</p>
@@ -224,7 +229,7 @@
 											</div>
 										</div>
 										<div class="row border event-timetable-speech">
-											<div class="col-2 event-timetable-time border-right pt-1">10:00 - 10:40</div>
+											<div class="col-2 event-timetable-time border-right pt-1 p-0 text-center">10:00 - 10:40</div>
 											<div class="col-10 py-1 d-flex flex-row justify-content-between">
 												<div>
 													<p class="text-uppercase mb-1">“My Second Name of Speech with too many words”</p>
@@ -249,7 +254,7 @@
 											</div>
 										</div>
 										<div class="row border event-timetable-speech">
-											<div class="col-2 event-timetable-time border-right py-1">10:40 - 11:20</div>
+											<div class="col-2 event-timetable-time border-right pt-1 p-0 text-center">10:40 - 11:20</div>
 											<div class="col-10 py-1 d-flex flex-row justify-content-between">
 												<p class="text-uppercase">“My Name of Speech with too many words”</p>
 												<div class="d-flex flex-column py-1">
@@ -268,7 +273,7 @@
 								</div>
 								<div class="container-fluid">
 									<div class="row align-items-center d-flex">
-										<div class="input-group col-2 p-0">
+										<div class="input-group col-lg-2 col p-0">
 											<div class="input-group-prepend">
 												<span class="input-group-text" id="basic-addon1">
 													<svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
@@ -281,9 +286,9 @@
 											<input type="text" class="form-control px-1 text-center" placeholder="ГГ:ММ" aria-describedby="basic-addon1">
 										</div>
 										<span class="mx-2 d-flex align-items-center">-</span>
-										<input class="form-control col-1 px-1 text-center" type="text" placeholder="ГГ:ММ">
-										<input class="form-control col-8 ml-2" type="text" placeholder="Название / тема выступления">
-										<svg class="text-danger ml-1" id="i-close" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round"
+										<input class="form-control col-lg-1 col px-1 text-center" type="text" placeholder="ГГ:ММ">
+										<input class="form-control col-lg-8 col-11 ml-lg-2 mt-lg-0 mt-3" type="text" placeholder="Название / тема выступления">
+										<svg class="text-danger ml-auto mt-lg-0 mt-3" id="i-close" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round"
 										 stroke-linejoin="round" stroke-width="2">
 											<path d="M2 30 L30 2 M30 30 L2 2" />
 										</svg>
@@ -301,18 +306,19 @@
 												<path d="M30 12 L16 24 2 12" />
 											</svg>
 										</div>
-										<div class="col-8 d-flex align-items-center text-primary ">
+										<span class="mx-2 d-flex align-items-center invisible">-</span>
+										<div class="col-md-8 col-11 ml-md-0 ml-2 d-flex align-items-center text-primary px-0">
 											<p class="m-0"><small>Регистрация</small></p>
-											<span class="mx-2 text-muted">|</span>
+											<span class="mx-2 text-muted font-12">|</span>
 											<p class="m-0"><small>Кофе брэйк</small></p>
-											<span class="mx-2 text-muted">|</span>
+											<span class="mx-2 text-muted font-12">|</span>
 											<p class="m-0"><small>Обед</small></p>
-											<span class="mx-2 text-muted">|</span>
+											<span class="mx-2 text-muted font-12">|</span>
 											<p class="m-0"><small>Афтепати</small></p>
 										</div>
 									</div>
 									<div class="row">
-										<button type="button" class="btn btn-outline-primary col-4 mt-4 d-flex align-items-center justify-content-between">
+										<button type="button" class="btn btn-outline-primary col-xl-4 col-lg-5 col-md-7 col-12 mt-4 d-flex align-items-center justify-content-between">
 											<svg id="i-plus" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
 											 stroke-width="2">
 												<path d="M16 2 L16 30 M2 16 L30 16" />
@@ -320,7 +326,7 @@
 											Добавить елемент расписания</button>
 									</div>
 									<div class="row">
-										<p class="col-4 text-center text-muted"><small>(выступление, доклад, перерыв и т.д)</small></p>
+										<p class="col-xl-4 col-lg-5 col-md-7 col-12 text-center text-muted"><small>(выступление, доклад, перерыв и т.д)</small></p>
 									</div>
 								</div>
 							</div>
@@ -329,9 +335,7 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

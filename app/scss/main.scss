@@ -44,3 +44,68 @@ p {
   height: 40px;
   width: 40px;
 }
+
+.font-12 {
+  font-size: 12px;
+}
+
+.height-40 {
+  height: 46.5px;
+}
+
+.nav-tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+}
+.nav-tabs>li {
+  float: none;
+}
+
+@media screen and (max-width: 1199px) {
+  #flowBoxes div:not(.active) {
+    display: none !important;
+  }
+
+  #flowBoxes div.right.active:after{
+    display: none !important;
+  }
+}
+
+#flowBoxes div {
+    position:relative;
+    height: 100%;
+    padding-right: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#flowBoxes div.active {
+  background-color: #007bff;
+}
+
+#flowBoxes div.right:after{
+    content:'';
+    margin-top: 4px;
+    margin-right: -7px;
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    width:38px;
+    height:38px;
+    position:absolute;
+    right:0;
+    top:-1px;
+    background-color: #1ebb6c;
+    z-index:150;
+    
+    -webkit-transform: translate(10px,4px) rotate(45deg);
+       -moz-transform: translate(10px,4px) rotate(45deg);
+        -ms-transform: translate(10px,4px) rotate(45deg);
+         -o-transform: translate(10px,4px) rotate(20deg); 
+            transform: translate(10px,4px) rotate(45deg);
+}
+
+#flowBoxes div.right.active:after{
+  background-color: #007bff !important;
+}
