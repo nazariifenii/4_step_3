@@ -152,8 +152,8 @@
 			<div id="flowBoxes" class="row mx-0" style="height: 53px; background-color: #1ebb6c;">
 		        <div class="col right text-uppercase d-flex align-items-center justify-content-center">1. компания-организатор</div>
 			    <div class="col right text-uppercase d-flex align-items-center justify-content-center"">2. детали мероприятия</div>
-			    <div class="col right text-uppercase d-flex align-items-center justify-content-center"">3. билети/регистрация</div>
-			    <div class="col active text-uppercase d-flex align-items-center justify-content-center"">4. настройки</div>
+			    <div class="col right text-uppercase d-flex align-items-center justify-content-center"">3. билети/регистрация<span class="position-absolute mt-3 text-lowercase"><i>(билети, регистарция, схеми зала)</i></span></div>
+			    <div class="col active text-uppercase d-flex align-items-center justify-content-center"">4. настройки<span class="position-absolute mt-3 text-lowercase"><i>(росписание, спонсори, спикери)</i></span></div>
 			</div>
 			<div class="row-fluid my-4">
 				<div class="col-9 mx-auto p-0">
@@ -181,8 +181,20 @@
 
 	<script>
 		$(document).ready(function(){
+			var first_click = false;
+
 		    $("#content-load-btn").click(function(){
 		        $("#content-to-load").load("content.html");
+
+		        if (first_click) {
+		        	if ($("#content-to-load").css("display") == 'none') {
+		        		$("#content-to-load").css("display", "block");
+		        	} else {
+		        		$("#content-to-load").css("display", "none");
+		        	}
+			    }
+
+		        first_click = true;
 		    });
 		});
 	</script>
